@@ -1,0 +1,46 @@
+.sections{
+     max-width: 1200px;
+     margin: auto;
+     display: flex;
+     align-items: center;
+     margin-top:70px ;
+}
+
+.heading{
+     font-size: 5vw;
+     font-weight: 900;
+     margin-bottom: 0;
+}
+.buttons{
+     display: flex;
+     gap: 20px;
+}
+.second{
+     background-color: transparent;
+     color: black;
+     border: 1px solid black;
+}
+.aviLogo{
+     display: flex;
+     gap: 20px;
+}
+@media (max-width:850px){
+     .sections{
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+     .shoeImage{
+          width: 30vw;
+          margin-top: 50px;
+     }
+     .textSection{
+          text-align: center;
+          justify-content: center;
+     }
+     .buttons{
+          justify-content: center;
+     }
+     .aviLogo{
+          justify-content: center;
+     }
+}

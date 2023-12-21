@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Dosis:wght@500&family=Gloock&family=Inter&family=Lato:wght@300&family=Manrope:wght@300&family=Montserrat&family=Mulish&family=Noto+Sans+Lepcha&family=Nunito&family=Poppins:wght@200;300;400;500;600&family=Quicksand:wght@500&family=Schibsted+Grotesk:wght@500&family=Work+Sans:wght@700&display=swap');
+body{
+     font-family: 'Poppins', sans-serif;
+}
+nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1200px;
+     margin: auto;
+}
+nav .logo{
+     display: flex;
+     align-items: center;
+}
+nav ul{
+     display: flex;
+     gap: 20px;
+}
+nav ul li{
+     list-style: none;
+}
+button{
+     height: 30px;
+     padding: 0 20px;
+     background-color: red;
+     color: #fff;
+     border: none;
+     border-radius: 3px;
+}
+.ham{
+     display: none;
+}
+@media (max-width:750px){
+     nav ul, button{
+          display: none;
+     }
+     .ham{
+          display: block;
+     }
+}
