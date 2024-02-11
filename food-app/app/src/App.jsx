@@ -11,6 +11,12 @@ const App = () => {
             <input type="text" placeholder="Search food" />
           </div>
         </TopContainer>
+        <FilterContainer>
+          <Button>All</Button>
+          <Button>Breakfast</Button>
+          <Button>Lunch</Button>
+          <Button>Dinner</Button>
+        </FilterContainer>
       </Container>
     </>
   );
@@ -41,4 +47,15 @@ const TopContainer = styled.section`
       padding: 0 10px;
     }
   }
+`;
+const FilterContainer = styled.section`
+  display:flex;
+  justify-content: center;
+  gap: 12px;
+`;
+
+const Button = styled.button`
+  background: #ff4343;
+  border-radius: 5px;
+  padding: 6px 12px;
 `;
