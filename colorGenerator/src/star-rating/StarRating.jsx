@@ -21,7 +21,7 @@ export default function StarRating({noOfStars}) {
         [...Array(noOfStars)].map((_,index)=>{
           index+=1
           return <FaStar
-          className={index<= (hover || rating)? 'text-yellow-200':'text-white'}
+          className={index<= (hover || rating)? 'text-yellow-400':'text-white'}
           key={index}
           onClick={()=>handleClick(index)}
           // onMouseEnter={()=>handleMouseEnter(index)}

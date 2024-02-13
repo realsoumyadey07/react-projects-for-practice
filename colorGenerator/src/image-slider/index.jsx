@@ -34,10 +34,10 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
   }, [url]);
   console.log(images);
   if (loading) {
-    return <div>Loading data ! Please wait</div>;
+    return <div className="text-white">Loading data ! Please wait</div>;
   }
   if (errorMsg !== null) {
-    return <div>Error occured ! {errorMsg}</div>;
+    return <div className="text-white">Error occured ! {errorMsg}</div>;
   }
   return (
     <div className="flex-col">
