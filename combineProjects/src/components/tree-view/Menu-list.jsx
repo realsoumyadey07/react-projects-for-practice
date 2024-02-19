@@ -3,7 +3,7 @@ import Menuitems from './Menu-items'
 
 const Menulist = ({list=[]}) => {
   return (
-    <ul>
+    <ul className='bg-blue-800'>
       {
           list && list.length ?
           list.map((item, index) =><Menuitems key={index} item={item}/>)
